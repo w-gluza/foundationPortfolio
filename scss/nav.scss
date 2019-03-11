@@ -23,7 +23,7 @@ a:hover {
 /*-------------------------------------*/
 
 @include respond(tab-port) {
-  a {
+  .nav__item-mob {
     font-size: 42px;
   }
 
