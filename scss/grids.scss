@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-rows: 5rem 95vh auto 7rem;
+  background-color: $light;
+}
+.about {
+  min-height: 100vh;
+}
+.footer {
+  background-color: $secondary;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: max-content auto 90vh;
+}
+.section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4.5rem 0rem;
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+}
+@include respond(tab-port) {
+  .img-reverse {
+    grid-row-start: 1;
+  }
+}

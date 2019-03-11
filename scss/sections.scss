@@ -1,0 +1,40 @@
+.header,
+.main {
+  padding: 4.5rem;
+}
+
+.section__item {
+  align-self: center;
+}
+
+.about {
+  align-items: center;
+}
+
+.project__description {
+  align-self: end;
+  padding-top: 3rem;
+}
+.profile {
+  padding-top: 4rem;
+  @include respond(tab-port) {
+    padding-top: 0rem;
+  }
+}
+.button {
+  background-color: $primary;
+  opacity: 0.75;
+  border: 0;
+  border-radius: 35px;
+  padding: 12px 50px 12px 50px;
+  font-size: $font-size-regular;
+  font-weight: $font-weight-bold;
+  margin-top: 20px;
+}
+.button:hover,
+.button:active,
+.button:visited {
+  background-color: $primary;
+  opacity: 1;
+  border: 0;
+}

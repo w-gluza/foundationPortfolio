@@ -1,0 +1,26 @@
+.footer__items__container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  align-content: center;
+  justify-content: center;
+}
+
+.footer__item {
+  align-self: center;
+  height: 3.5rem;
+  padding: 0rem 1rem;
+}
+.icon__projects,
+.svg__icon {
+  height: 3.5rem;
+  fill: $primary;
+  align-self: center;
+}
+
+.svg__icon:hover {
+  fill: $light;
+}
+.icon__projects:hover {
+  fill: $secondary;
+}

@@ -1,0 +1,75 @@
+/* -------- SIMPLE RESET ------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: 'Monserrat', Helvetica, Arial, Verdana, Tahoma;
+}
+
+button,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  cursor: pointer;
+  font-weight: $font-weight-light;
+}
+
+/* ------------------------------------- */
+
+body {
+  font-size: $font-size-regular;
+  font-weight: $font-weight-regular;
+  background-color: $light;
+  color: $dark;
+}
+
+h1,
+h2,
+h3 {
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-small;
+  letter-spacing: $letter-spacing-regular;
+  color: $dark;
+  @include respond(tab-port) {
+    font-size: $font-size-large-mob;
+  }
+}
+
+p {
+  font-size: $font-size-small;
+  font-weight: $font-weight-light;
+  line-height: $line-height-regular;
+  letter-spacing: $letter-spacing-large;
+  color: $dark;
+  @include respond(tab-port) {
+    font-size: $font-size-regular-mob;
+  }
+}
+
+address p {
+  font-size: $font-size-small;
+  font-weight: $font-weight-light;
+  line-height: $line-height-regular;
+  letter-spacing: $letter-spacing-large;
+  color: $dark;
+  font-style: normal;
+  @include respond(tab-port) {
+    font-size: $font-size-small-mob;
+  }
+}
+span {
+  color: $primary;
+}
+
+li {
+  padding: 0px 15px;
+}

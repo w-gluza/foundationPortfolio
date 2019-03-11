@@ -11,7 +11,7 @@
 
 // // Grids (choose one)
 @include foundation-xy-grid-classes;
-// @include foundation-grid;
+@include foundation-grid;
 // @include foundation-flex-grid;
 
 // Generic components
@@ -64,5 +64,9 @@
 @include motion-ui-animations;
 
 // // Custom scss
-@import 'custom.scss';
-@import 'projects.scss';
+@import 'abstracts.scss';
+@import 'base.scss';
+@import 'grids.scss';
+@import 'nav.scss';
+@import 'sections.scss';
+@import 'footer.scss';
